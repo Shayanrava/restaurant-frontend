@@ -501,22 +501,24 @@ export default function Home() {
                       {item.price.toLocaleString("fa-IR")} تومان
                     </div>
                   </div>
-                  <div className="flex items-center gap-[10px]">
-                    <button
-                      onClick={() => decreaseQty(item.id)}
-                      className="w-[35px] h-[35px] rounded-full bg-[#7a1f1f] text-white text-[18px] cursor-pointer"
-                    >
-                      −
-                    </button>
-                    <span className="font-bold text-[18px]">
-                      {item.quantity}
-                    </span>
-                    <button
-                      onClick={() => increaseQty(item.id)}
-                      className="w-[35px] h-[35px] rounded-full bg-[#7a1f1f] text-white text-[18px] cursor-pointer"
-                    >
-                      +
-                    </button>
+                  <div className="flex flex-col lg:flex-row items-center gap-[10px]">
+                    <div className="flex gap-[10px] items-center">
+                      <button
+                        onClick={() => decreaseQty(item.id)}
+                        className="w-[35px] h-[35px] rounded-full bg-[#7a1f1f] text-white text-[18px] cursor-pointer"
+                      >
+                        −
+                      </button>
+                      <span className="font-bold text-[18px]">
+                        {item.quantity}
+                      </span>
+                      <button
+                        onClick={() => increaseQty(item.id)}
+                        className="w-[35px] h-[35px] rounded-full bg-[#7a1f1f] text-white text-[18px] cursor-pointer"
+                      >
+                        +
+                      </button>
+                    </div>
                     <button
                       className="text-[#7a1f1f] text-[18px] mr-2 cursor-pointer"
                       onClick={() => removeItem(item.id)}
