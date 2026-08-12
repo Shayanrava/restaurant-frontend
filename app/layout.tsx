@@ -1,5 +1,18 @@
 import type { Metadata } from "next";
-import "./global.css";
+import { Lalezar, Vazirmatn } from "next/font/google";
+import "./globals.css";
+
+// پیکربندی فونت‌ها
+const lalezar = Lalezar({
+  weight: "400",
+  subsets: ["arabic"],
+  variable: "--font-lalezar",
+});
+
+const vazirmatn = Vazirmatn({
+  subsets: ["arabic"],
+  variable: "--font-vazirmatn",
+});
 
 export const metadata: Metadata = {
   title: "رستوران سنتی شبستان",
@@ -12,16 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fa" dir="rtl">
+    <html lang="fa" dir="rtl" className={`${lalezar.variable} ${vazirmatn.variable}`}>
       <head>
-        {/* Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        {/* Font Awesome Icons */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"

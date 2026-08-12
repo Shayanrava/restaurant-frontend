@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #7A1F1F;
+    --primary-dark: #4B2E2E;
+    --gold: #D4AF37;
+    --gold-light: #F2D16B;
+    --turquoise: #178C88;
+    --cream: #FFF8EE;
+    --light: #F9F4EC;
+    --text: #333;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-vazirmatn), sans-serif;
+    background: url("/images/pattern.png") repeat !important;
+    background-size: 320px !important;
+    background-attachment: fixed !important;
+    color: #3f2a1d;
+    overflow-x: hidden;
+  }
+}
+
+/* تعریف کلاس‌های فونت به‌صورت صریح */
+.font-lalezar {
+  font-family: var(--font-lalezar), sans-serif !important;
+}
+
+.font-vazirmatn {
+  font-family: var(--font-vazirmatn), sans-serif !important;
+}
