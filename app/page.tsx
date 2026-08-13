@@ -485,24 +485,14 @@ export default function Home() {
             ) : (
               cart.map((item) => (
                 <div className="w-full p-3.75 rounded-[18px] bg-[#faf7f1] ">
-
-                  <div className="flex md:hidden justify-between">
-                    <div className="text-[20px] lg:font-[20px] font-bold text-[#6d2727] mb-2">
-                      {item.name}
-                    </div>
-                    <div className="text-[#2f6b4f] font-bold">
-                      {item.price.toLocaleString("fa-IR")} تومان
-                    </div>
-                  </div>
-
                   <div
                     key={item.id}
-                    className="grid grid-cols-[90px_1fr_auto] gap-4.5 items-center p-3.75"
+                    className="grid grid-cols-[auto_1fr_auto] gap-4.5 items-center p-1"
                   >
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-20 h-20 object-contain"
+                      className="size-36 lg:size-36 object-contain"
                     />
                     <div>
                       <div className="text-[20px] lg:font-[20px] font-bold text-[#6d2727] mb-2 hidden md:flex">
@@ -536,6 +526,15 @@ export default function Home() {
                       >
                         <i className="fa-solid fa-trash"></i>
                       </button>
+                    </div>
+                  </div>
+
+                  <div className="flex md:hidden justify-between p-3">
+                    <div className="text-[20px] lg:font-[20px] font-bold text-[#6d2727] mb-2">
+                      {item.name}
+                    </div>
+                    <div className="text-[#2f6b4f] font-bold">
+                      {item.price.toLocaleString("fa-IR")} تومان
                     </div>
                   </div>
                 </div>
