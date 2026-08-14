@@ -16,7 +16,7 @@ export default function Gallery() {
                         className="overflow-hidden rounded-[20px] shadow-[0_10px_25px_rgba(0,0,0,0.12)] group"
                     >
                         <img
-                            src={`/images/gallery${i}.jpg`}
+                            src={`/images/gallery${i}.webp`}
                             alt=""
                             className="w-full h-62.5 object-cover transition-transform duration-400 group-hover:scale-[1.08]"
                         />

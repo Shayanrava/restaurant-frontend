@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <section
             id="hero"
-            className="h-screen bg-[url('/images/heroimage.png')] bg-center bg-cover relative flex justify-center items-center text-center p-7.5"
+            className="h-screen bg-[url('/images/heroimage.webp')] bg-center bg-cover relative flex justify-center items-center text-center p-7.5"
         >
             <div className="absolute inset-0 bg-[rgba(35,20,10,0.55)]"></div>
             <div className="relative z-2 text-white max-w-200">

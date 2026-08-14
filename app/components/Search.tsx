@@ -7,7 +7,7 @@ interface SearchQueriesProps {
 
 export default function Search({searchQuery ,setSearchQuery} : SearchQueriesProps ) {
     return (
-        <section className="flex justify-center pt-5 px-5 pb-12.5 bg-[url('/images/paternmenu.png')] bg-repeat">
+        <section className="flex justify-center pt-5 px-5 pb-12.5 bg-[url('/images/paternmenu.webp')] bg-repeat">
             <input
                 type="text"
                 id="searchInput"

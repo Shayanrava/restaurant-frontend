@@ -7,7 +7,7 @@ export default function About() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 items-center text-center lg:text-right">
                 <div>
                     <img
-                        src="/images/logo.png"
+                        src="/images/logo.webp"
                         alt="رستوران سنتی شبستان"
                         className="w-full rounded-[25px] shadow-[0_15px_30px_rgba(0,0,0,0.15)]"
                     />

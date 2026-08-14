@@ -11,7 +11,7 @@ export default function SpecialChef({addToCart} : SpecialChefProps) {
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-15 text-center lg:text-right">
                 <div className="flex justify-center items-center lg:-order-none -order-1">
                     <img
-                        src="/images/special.png"
+                        src="/images/special.webp"
                         alt="چلوکباب سلطانی مخصوص شبستان"
                         className="w-full max-w-125 drop-shadow-[0_20px_35px_rgba(0,0,0,0.25)] hover:scale-105 hover:-rotate-2 transition-all duration-400"
                     />

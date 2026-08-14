@@ -17,6 +17,7 @@ const vazirmatn = Vazirmatn({
 export const metadata: Metadata = {
   title: "رستوران سنتی شبستان",
   description: "طعم اصیل غذاهای ایرانی در فضایی گرم و دلنشین",
+  icons : "/images/favicon.png"
 };
 
 export default function RootLayout({

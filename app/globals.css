@@ -18,7 +18,7 @@
 
   body {
     font-family: var(--font-vazirmatn), sans-serif;
-    background: url("/images/pattern.png") repeat !important;
+    background: url("/images/pattern.webp") repeat !important;
     background-size: 320px !important;
     background-attachment: fixed !important;
     color: #3f2a1d;
